@@ -7,7 +7,7 @@ This Lambda will be invoked when a file is uploaded to a particular bucket. It w
 Clone the project
 
 ```bash
-  git clone 
+  git clone https://github.com/vikasdfghjl/s3-image-lambda-compression.git
 ```
 
 Install Dependencies
