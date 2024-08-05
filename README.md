@@ -1,6 +1,6 @@
 # Image Compression Lambda
 
-This Lambda will be invoked when a file is uploaded to a particular bucket. It will fetch the file that was added, resize it, and store the output in a different/same bucket.
+This Lambda function will be invoked when a file is uploaded to a particular bucket. It will fetch the file that was added, resize it, and store the output in a different/same bucket.
 
 ## Run Locally
 
@@ -19,10 +19,10 @@ npm install --arch=x64 --platform=linux --target=16x sharp
 
 ## Environment Variables
 
-Remember set the `DEST_BUCKET` in your Lambda's "Configuration" tab. To do this, open your Lambda in the AWS Console, select the "Configuration" tab, then click "Environment variables"
+Remember set the `DEST_BUCKET` in your Lambda's **Configuration** tab. To do this, open your Lambda in the AWS Console, select the **Configuration** tab, then click **Environment variables**.
 
 ```bash
-DEST_BUCKET=thumbnails-bucket-name
+DEST_BUCKET=destination-bucket-name
 ```
 
 ## Deployment
@@ -31,4 +31,4 @@ DEST_BUCKET=thumbnails-bucket-name
 npm run package
 ```
 
-Running the command above will zip your source code and dependencies. The zip can then be uploaded to your Lambda.
+Running the command above will zip your source code and dependencies as `function.zip`. The zip can then be uploaded to your Lambda.
